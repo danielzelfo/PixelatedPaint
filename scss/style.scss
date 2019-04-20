@@ -1,0 +1,43 @@
+html {
+  overflow-y: hidden;
+  cursor: none
+}
+.R {
+  display: table-row;
+  height: 10px;
+  width: 100%;
+}
+.C {
+  display: table-cell;
+  width: 10px;
+  height: 10px;
+}
+
+#controls {
+  cursor: auto;
+  width: 250px;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  border: 1px solid grey;
+  background: lightblue;
+  p{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: Arial;
+  }
+  button, input {
+    background: white;
+    border: 1px solid grey;
+  }
+  #hidectrl, #showctrl{
+    width: 100%;
+    text-align: center;
+    opacity: .75;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
